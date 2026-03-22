@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive - iOS Tech News</title>
+    <meta name="description" content="Browse all iOS development news archives">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📱</text></svg>">
+    <link rel="alternate" type="application/rss+xml" title="iOS Tech News RSS" href="rss.xml">
+    <style>
+        :root {
+            --primary: #007AFF;
+            --primary-dark: #0051D5;
+            --secondary: #5856D6;
+            --bg: #F2F2F7;
+            --bg-card: #FFFFFF;
+            --text: #1C1C1E;
+            --text-secondary: #8E8E93;
+            --border: #E5E5EA;
+            --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            --radius: 16px;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        header p { opacity: 0.95; }
+        
+        nav {
+            background: var(--bg-card);
+            padding: 15px 20px;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--shadow);
+        }
+        
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-links { display: flex; gap: 30px; }
+        .nav-links a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover { color: var(--primary); }
+        
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .month-section {
+            margin-bottom: 50px;
+        }
+        
+        .month-header {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid var(--primary);
+        }
+        
+        .archive-grid {
+            display: grid;
+            gap: 20px;
+        }
+        
+        .archive-item {
+            background: var(--bg-card);
+            padding: 25px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            transition: all 0.2s;
+            border-left: 4px solid transparent;
+        }
+        
+        .archive-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+            border-left-color: var(--primary);
+        }
+        
+        .archive-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+        
+        .archive-item h3 a {
+            color: var(--text);
+            text-decoration: none;
+        }
+        
+        .archive-item h3 a:hover {
+            color: var(--primary);
+        }
+        
+        .archive-meta {
+            display: flex;
+            gap: 15px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        .tag {
+            display: inline-flex;
+            align-items: center;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        
+        .tag.swift { background: #FFF3E0; color: #FF6B35; }
+        .tag.swiftui { background: #E3F2FD; color: #007AFF; }
+        .tag.ios { background: #E8F5E9; color: #34C759; }
+        .tag.xcode { background: #F3E5F5; color: #5856D6; }
+        
+        @media (max-width: 640px) {
+            header h1 { font-size: 2rem; }
+            .archive-item { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>📚 News Archive</h1>
+        <p>All iOS development news, organized by date</p>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="archive.html" class="active">Archive</a>
+                <a href="https://t.me/+AAETAm-9U2c1M2Jl">Telegram</a>
+                <a href="rss.xml">RSS</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="month-section">
+            <h2 class="month-header">📅 March 2026</h2>
+            <div class="archive-grid">
+                <article class="archive-item">
+                    <h3><a href="#">iOS 26.4 Beta Released - Get Your Apps Ready</a></h3>
+                    <div class="archive-meta">
+                        <span>📅 March 22, 2026</span>
+                        <span class="tag ios">iOS</span>
+                        <span class="tag xcode">Xcode</span>
+                    </div>
+                </article>
+
+                <article class="archive-item">
+                    <h3><a href="#">Swift Student Challenge 2026 Opens</a></h3>
+                    <div class="archive-meta">
+                        <span>📅 March 22, 2026</span>
+                        <span class="tag swift">Swift</span>
+                    </div>
+                </article>
+
+                <article class="archive-item">
+                    <h3><a href="#">Swift System Metrics 1.0 Released</a></h3>
+                    <div class="archive-meta">
+                        <span>📅 March 22, 2026</span>
+                        <span class="tag swift">Swift</span>
+                    </div>
+                </article>
+
+                <article class="archive-item">
+                    <h3><a href="#">Swift Windows Workgroup Announced</a></h3>
+                    <div class="archive-meta">
+                        <span>📅 March 22, 2026</span>
+                        <span class="tag swift">Swift</span>
+                    </div>
+                </article>
+
+                <article class="archive-item">
+                    <h3><a href="#">App Store Commission Changes in China</a></h3>
+                    <div class="archive-meta">
+                        <span>📅 March 22, 2026</span>
+                        <span class="tag ios">App Store</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="month-section">
+            <h2 class="month-header">📅 February 2026</h2>
+            <div class="archive-grid">
+                <article class="archive-item">
+                    <h3><a href="#">SwiftUI 6.0 Released with Major Updates</a></h3>
+                    <div class="archive-meta">
+                        <span>📅 February 28, 2026</span>
+                        <span class="tag swiftui">SwiftUI</span>
+                    </div>
+                </article>
+
+                <article class="archive-item">
+                    <h3><a href="#">Xcode 26 Released - New Features and Improvements</a></h3>
+                    <div class="archive-meta">
+                        <span>📅 February 15, 2026</span>
+                        <span class="tag xcode">Xcode</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="month-section">
+            <h2 class="month-header">📅 January 2026</h2>
+            <div class="archive-grid">
+                <article class="archive-item">
+                    <h3><a href="#">iOS 26.1 Released with Bug Fixes</a></h3>
+                    <div class="archive-meta">
+                        <span>📅 January 20, 2026</span>
+                        <span class="tag ios">iOS</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <footer style="background: #1C1C1E; color: #8E8E93; padding: 40px 20px; text-align: center; margin-top: 60px;">
+        <p style="margin-bottom: 20px;">
+            <a href="index.html" style="color: white; text-decoration: none; margin: 0 15px;">Home</a>
+            <a href="archive.html" style="color: white; text-decoration: none; margin: 0 15px;">Archive</a>
+            <a href="https://github.com/phuongddx/ios-news" style="color: white; text-decoration: none; margin: 0 15px;">GitHub</a>
+        </p>
+        <p style="opacity: 0.7;">© 2026 iOS Tech News. Built with ❤️ for iOS developers.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>iOS Tech News</title>
+        <description>Daily curated news for iOS developers</description>
+        <link>https://your-site.com</link>
+        <atom:link href="https://your-site.com/rss.xml" rel="self" type="application/rss+xml"/>
+        <language>en-us</language>
+        <lastBuildDate>Sat, 22 Mar 2026 00:00:00 +0700</lastBuildDate>
+        
+        <item>
+            <title>iOS 26.4 Beta Released - Get Your Apps Ready</title>
+            <description>Apple has released beta versions of iOS 26.4, iPadOS 26.4, macOS 26.4, tvOS 26.4, visionOS 26.4, and watchOS 26.4. Developers should test their apps with these releases.</description>
+            <link>https://developer.apple.com/news/</link>
+            <guid>ios-26-4-beta</guid>
+            <pubDate>Sat, 22 Mar 2026 00:00:00 +0700</pubDate>
+            <category>iOS</category>
+            <category>Xcode</category>
+        </item>
+        
+        <item>
+            <title>Swift Student Challenge 2026 - Submissions Now Open</title>
+            <description>The Swift Student Challenge is back! Submissions are open through February 28, 2026. Free to enter, no prior experience required.</description>
+            <link>https://developer.apple.com/swift-student-challenge/</link>
+            <guid>swift-student-challenge-2026</guid>
+            <pubDate>Sat, 22 Mar 2026 00:00:00 +0700</pubDate>
+            <category>Swift</category>
+            <category>Education</category>
+        </item>
+        
+        <item>
+            <title>Swift System Metrics 1.0 Released</title>
+            <description>Swift.org announced the 1.0 release of Swift System Metrics, a package that collects process-level system metrics like CPU utilization and memory usage.</description>
+            <link>https://swift.org/blog/</link>
+            <guid>swift-system-metrics-1-0</guid>
+            <pubDate>Sat, 22 Mar 2026 00:00:00 +0700</pubDate>
+            <category>Swift</category>
+        </item>
+    </channel>
+</rss>
